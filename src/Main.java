@@ -95,8 +95,8 @@ public class Main {
         int currentYear = 2024;
         int lowerBorder = currentYear - 200;
         int upperBorder = currentYear + 100;
-        for (int i = 0; i < upperBorder; i++) {
-            if (i > lowerBorder && i % period == 0) {
+        for (int i = 0; i < upperBorder; i+= period) {
+            if (i > lowerBorder) {
                 System.out.println(i);
             }
         }
